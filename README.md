@@ -8,3 +8,5 @@
 - Astro
 - Markdoc
 - TailwindCSS
+- Turbo
+- CF pages
