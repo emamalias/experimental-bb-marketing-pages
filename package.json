@@ -1,0 +1,26 @@
+{
+	"name": "bytebase.com",
+	"workspaces": [
+		"apps/*"
+	],
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"lint": "turbo run lint",
+		"type-check": "turbo type-check",
+		"clean": "turbo clean",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\""
+	},
+	"devDependencies": {
+		"wrangler": "3.69.1",
+		"prettier": "^3.2.5",
+		"prettier-plugin-tailwindcss": "latest",
+        "prettier-plugin-astro": "latest",
+        "turbo": "latest"
+	},
+	"packageManager": "pnpm@9.5.0",
+	"engines": {
+		"node": ">=20.7.0",
+		"pnpm": ">=9.0"
+	}
+}
