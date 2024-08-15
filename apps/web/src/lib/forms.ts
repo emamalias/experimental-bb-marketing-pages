@@ -1,0 +1,7 @@
+const BUTTON_SUCCESS_TIMEOUT_MS = 1000;
+
+const ENTERPRISE_INQUIRY = 'Enterprise Inquiry';
+const REFUND = 'Refund';
+const VIEW_LIVE_DEMO = 'View Live Demo';
+
+export { BUTTON_SUCCESS_TIMEOUT_MS, ENTERPRISE_INQUIRY, REFUND, VIEW_LIVE_DEMO };
