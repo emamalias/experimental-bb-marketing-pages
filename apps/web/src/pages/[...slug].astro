@@ -10,13 +10,42 @@ if(!slug) {
 	contentPath = 'homepage';
 }
 
+const components = import.meta.glob([
+	'../components/**/*.js',
+	'../components/**/*.ts',
+	'../components/**/*.astro',
+	'../components/**/*.tsx',
+	'../components/**/*.jsx',
+	'../components/**/*.vue',
+	'../components/**/*.svelte',
+]);
+
 // @ts-ignore
 const page = await getEntry('pages', contentPath)
 if(!page) throw new Error(`page ${contentPath} not found`);
 
-const { Content } = await page.render()
+const { Content, headings, remarkPluginFrontmatter } = await page.render()
+
+// Resolve the component dynamically by trying each supported extension
+let Component;
+const possibleExtensions = ['js', 'ts', 'astro', 'tsx', 'jsx', 'vue', 'svelte'];
+
+for (const ext of possibleExtensions) {
+  const path = `../components/${remarkPluginFrontmatter.componentPath}/index.${ext}`;
+  if (components[path]) {
+    Component = components[path];
+    break;
+  }
+}
+
+// TODO: need component type?
+let arrComponents: any = [];
+
+if(Component) arrComponents = [...arrComponents, Component];
+
+if (!Content || !Component) throw new Error(`Component ${remarkPluginFrontmatter.componentPath}/index not found`);
 ---
 
-<Layout>
-	<Content />
+<Layout {...headings}>
+	<Content components={arrComponents} />
 </Layout>
