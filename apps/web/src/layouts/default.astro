@@ -1,11 +1,17 @@
 ---
 import '../assets/css/global.css';
 
-const { frontmatter } = Astro.props;
-const lang = frontmatter?.lang || 'en';
+export interface Props {
+	title: string;
+	metaTitle?: string;
+	description?: string;
+}
+
+const props = Astro.props;
+const lang = 'en';
 const hostname = Astro.url.hostname;
-const metaTitle = frontmatter?.metaTitle || frontmatter?.title || 'Bytebase';
-const metaDescription = frontmatter?.metaDescription || frontmatter?.description;
+const metaTitle = props?.metaTitle || props.title || 'Bytebase';
+const metaDescription = props.description;
 ---
 <!DOCTYPE html>
 <html lang={lang}>

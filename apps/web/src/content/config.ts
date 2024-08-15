@@ -1,9 +1,11 @@
-import { defineCollection } from 'astro:content';
+// @ts-ignore
+import { defineCollection, z } from 'astro:content';
 
-const pageCollection = defineCollection({ /* ... */ });
+const posts = defineCollection({
+  // Type-check frontmatter using a schema
+  schema: z.object({
+    title: z.string(),
+  }),
+});
 
-export const collections = {
-  'page': pageCollection,
-};
-
-// TODO: add more collections
+export const collections = { posts };

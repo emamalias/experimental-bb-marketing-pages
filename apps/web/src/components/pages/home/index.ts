@@ -1,17 +1,17 @@
-import * as Benefits from './benefits';
-import * as DBScheme from './db-scheme';
-import * as Demo from './demo';
-import * as Features from './features';
-import * as Hero from './hero';
-import * as Logos from './logos';
-import * as PromoAccordion from './promo-accordion';
-import * as PromoBatchChange from './promo-batch-change';
-import * as PromoBranching from './promo-branching';
-import * as PromoDataMasking from './promo-data-masking';
-import * as PromoSecurity from './promo-security';
-import * as PromoSQLEditor from './promo-sql-editor';
+import Benefits from './benefits';
+import DBScheme from './db-scheme';
+import Demo from './demo';
+import Features from './features';
+import Hero from './hero';
+import Logos from './logos';
+import PromoAccordion from './promo-accordion';
+import PromoBatchChange from './promo-batch-change';
+import PromoBranching from './promo-branching';
+import PromoDataMasking from './promo-data-masking';
+import PromoSecurity from './promo-security';
+import PromoSQLEditor from './promo-sql-editor';
 
-export {
+export default {
 	Benefits,
 	DBScheme,
 	Demo,

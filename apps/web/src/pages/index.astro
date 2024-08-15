@@ -1,0 +1,15 @@
+---
+import Layout from '../layouts/default.astro';
+
+import { getEntry } from 'astro:content';
+
+// @ts-ignore
+const page = await getEntry('pages', 'homepage')
+if(!page) throw new Error(`homepage not found`);
+
+const { Content } = await page.render()
+---
+
+<Layout title={page.data.title} description={page.data.description}>
+	<Content />
+</Layout>

@@ -65,6 +65,12 @@ importers:
       '@rive-app/react-canvas':
         specifier: ^4.13.7
         version: 4.13.7(react@18.3.1)
+      '@types/react':
+        specifier: ^18.3.3
+        version: 18.3.3
+      '@types/react-dom':
+        specifier: ^18.3.0
+        version: 18.3.0
       astro:
         specifier: ^4.13.4
         version: 4.13.4(@types/node@22.3.0)(typescript@5.5.4)
