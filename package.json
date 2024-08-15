@@ -7,9 +7,10 @@
 		"build": "turbo run build",
 		"dev": "turbo run dev",
 		"lint": "turbo run lint",
+		"lint:fix": "turbo run lint --fix",
 		"type-check": "turbo type-check",
 		"clean": "turbo clean",
-		"format": "prettier --write \"**/*.{ts,tsx,md}\""
+		"format": "prettier --write \"**/*.{ts,tsx,md,mdx,astro}\""
 	},
 	"devDependencies": {
 		"wrangler": "3.69.1",
