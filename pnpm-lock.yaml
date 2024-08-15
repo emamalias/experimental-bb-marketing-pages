@@ -62,6 +62,9 @@ importers:
       '@react-hook/window-size':
         specifier: ^3.1.1
         version: 3.1.1(react@18.3.1)
+      '@rive-app/react-canvas':
+        specifier: ^4.13.7
+        version: 4.13.7(react@18.3.1)
       astro:
         specifier: ^4.13.4
         version: 4.13.4(@types/node@22.3.0)(typescript@5.5.4)
@@ -1649,6 +1652,14 @@ packages:
     resolution: {integrity: sha512-WPikHQxeT5Lb09yJEaW6Ja3ecE0g1YM6ukWYS2v/iZLUPn5YlYrGytspuCYQNSh/u7suCz4zRLEHYCl7OCigjw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
+
+  '@rive-app/canvas@2.19.8':
+    resolution: {integrity: sha512-iwUAGq7hNefzIBHdWdLBK5fHQBhDZSBy26DEI3XsLbtPuUdQcGtdd/VZbquyKef7PSzd9fSphfsqCu5Z66Hnfg==}
+
+  '@rive-app/react-canvas@4.13.7':
+    resolution: {integrity: sha512-BXn5yk3zYwe2fq8OxckaCy53T9kE6/Wj1nSkm0l2qn4TH8k0Yp4EjR7CrBOLTKrumhgivDI5JzbhIvGWtfOZ2w==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
 
   '@rollup/rollup-android-arm-eabi@4.20.0':
     resolution: {integrity: sha512-TSpWzflCc4VGAUJZlPpgAJE1+V60MePDQnBd7PPkpuEmOy8i87aL6tinFGKBFKuEDikYpig72QzdT3QPYIi+oA==}
@@ -6061,6 +6072,13 @@ snapshots:
     dependencies:
       '@react-types/overlays': 3.8.9(react@18.3.1)
       '@react-types/shared': 3.24.1(react@18.3.1)
+      react: 18.3.1
+
+  '@rive-app/canvas@2.19.8': {}
+
+  '@rive-app/react-canvas@4.13.7(react@18.3.1)':
+    dependencies:
+      '@rive-app/canvas': 2.19.8
       react: 18.3.1
 
   '@rollup/rollup-android-arm-eabi@4.20.0':

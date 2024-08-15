@@ -2,9 +2,9 @@
 
 import PromoAccordian from '@/components/pages/home/promo-accordion';
 import {
-  AccordionHead,
-  AccordionData,
-} from '@/components/pages/home/promo-accordion/promo-accordion';
+  type AccordionHead,
+  type AccordionData,
+} from '../promo-accordion/promo-accordion';
 
 const head: AccordionHead = {
   pill: 'Query',
