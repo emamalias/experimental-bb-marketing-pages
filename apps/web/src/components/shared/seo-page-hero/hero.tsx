@@ -12,7 +12,7 @@ import Integrations from '@/components/shared/integrations';
 import Link from '@/components/shared/link';
 
 import Route from '@/lib/route';
-import Image from 'next/image';
+import { Image } from 'astro:assets';
 
 const Hero = ({ title, description, linkText, linkUrl, linkTarget }: HeroProps) => {
   return (

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Image } from 'astro:assets';
 import { FULL_LOGO_LIST } from '@/lib/logo-data';
 
 const Logos = () => {

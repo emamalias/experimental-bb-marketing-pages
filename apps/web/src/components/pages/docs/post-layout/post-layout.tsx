@@ -1,6 +1,6 @@
 import format from 'date-fns/format';
 
-import Image from 'next/image';
+import { Image } from 'astro:assets';
 
 import clsx from 'clsx';
 

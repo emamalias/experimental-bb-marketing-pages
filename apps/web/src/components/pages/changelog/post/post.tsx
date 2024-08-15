@@ -7,7 +7,7 @@ import { ChangelogPost } from '@/types/changelog-post';
 import slugifyText from '@/utils/slugify-text';
 
 import { format } from 'date-fns';
-import Image from 'next/image';
+import { Image } from 'astro:assets';
 
 type PostProps = {
   post: ChangelogPost;

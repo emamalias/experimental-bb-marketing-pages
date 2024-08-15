@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import { Image } from 'astro:assets';
 import { useEffect, useState } from 'react';
 
 import Button from '@/components/shared/button';

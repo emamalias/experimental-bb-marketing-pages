@@ -1,5 +1,5 @@
 import { MDXRemote } from 'next-mdx-remote/rsc';
-import Image from 'next/image';
+import { Image } from 'astro:assets';
 
 import { Children, ReactNode, isValidElement } from 'react';
 

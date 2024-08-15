@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import { Image } from 'astro:assets';
 
 import { useEffect, useRef } from 'react';
 

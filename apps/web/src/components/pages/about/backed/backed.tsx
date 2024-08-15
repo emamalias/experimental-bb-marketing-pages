@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Image } from 'astro:assets';
 
 import Pill from '@/components/shared/pill';
 

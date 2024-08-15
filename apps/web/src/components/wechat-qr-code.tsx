@@ -1,6 +1,6 @@
 'use client';
 
-import Image from 'next/image';
+import { Image } from 'astro:assets';
 import { useEffect } from 'react';
 import useLocalStorage from 'react-use/lib/useLocalStorage';
 import { useCurrentLocale } from '@/locales/client';

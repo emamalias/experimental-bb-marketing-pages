@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import { Image } from 'astro:assets';
 
 import getBlogCardColors from '@/utils/get-blog-card-colors';
 import slugifyText from '@/utils/slugify-text';
