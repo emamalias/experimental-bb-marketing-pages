@@ -1,0 +1,5 @@
+navGroups:
+  - groupName: Header
+    items: []
+  - groupName: Footer
+    items: []

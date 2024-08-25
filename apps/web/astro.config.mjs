@@ -9,12 +9,16 @@ import keystatic from '@keystatic/astro'
 
 // https://astro.build/config
 export default defineConfig({
+	image: {
+    domains: ['astro.build'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.bytebase.com',
+      },
+    ]
+  },
   integrations: [tailwind(), react(), markdoc(), mdx(), keystatic()],
-  output: "server",
-  adapter: cloudflare({
-    imageService: 'passthrough',
-    platformProxy: {
-      enabled: true
-    }
-  }),
+  output: "hybrid",
+  adapter: cloudflare(),
 });

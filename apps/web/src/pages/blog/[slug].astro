@@ -1,0 +1,22 @@
+---
+import Layout from '@/layouts/default.astro';
+
+import { getEntry } from 'astro:content';
+
+const { slug } = Astro.params;
+
+let contentPath = slug;
+if(!slug) {
+	contentPath = 'homepage';
+}
+
+// @ts-ignore
+const page = await getEntry('pages', contentPath)
+if(!page) throw new Error(`page ${contentPath} not found`);
+
+const { Content, headings } = await page.render()
+---
+
+<Layout title={page.data.title} description={page.data.description}>
+	<Content />
+</Layout>
