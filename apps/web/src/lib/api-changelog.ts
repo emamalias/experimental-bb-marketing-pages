@@ -3,7 +3,7 @@ import fs from 'fs';
 import * as glob from 'glob';
 import matter from 'gray-matter';
 
-import { ChangelogPost } from '@/types/changelog-post';
+import { type ChangelogPost } from '@/types/changelog-post';
 
 const POSTS_PER_PAGE = 20;
 
